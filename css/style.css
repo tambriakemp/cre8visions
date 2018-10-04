@@ -160,6 +160,16 @@ li {
     padding: 5%;
 }
 
+.services-cards {
+
+}
+
+.s-call-out {
+    padding: 40px;
+    box-shadow: 0 5px 35px -7px #ccc;
+    border: 2px solid transparent;
+    text-align: center;
+}
 
 /* -- HOW WE WORK --*/
 /* -------------------*/
@@ -178,6 +188,22 @@ li {
     padding: 5%;
 }
 
+.question-container::before {
+    content: "-";
+    float: left;
+    padding-right: 5px;
+    font-weight: 600;
+}
+
+.question {
+    color: #671711;
+    font-weight: 600;
+}
+
+.answer {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
 
 /* -- OUR WORK --*/
 /* -------------------*/
