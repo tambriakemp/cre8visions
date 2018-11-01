@@ -224,3 +224,47 @@ li {
 #contact {
     padding: 5%;
 }
+
+input[type=text] {
+    border-radius: 3px; 
+    border: 1px solid #eeeeee; 
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#mce-FNAME {
+    width: 100%;
+    border-radius: 3px; 
+    border: 1px solid #eeeeee; 
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    border-radius: 3px; 
+    border: 1px solid #eeeeee; 
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    border-radius: 3px; 
+    border: 1px solid #eeeeee; 
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#mce-MESSAGE {
+    width: 100%;
+    height: 150px; 
+    resize: none;
+    border-radius: 3px; 
+    box-sizing: border-box;
+
+
+}
