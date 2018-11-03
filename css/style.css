@@ -1,17 +1,23 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Monsterrat', sans-serif;
     font-weight: 300;
-    font-size: 14px;
     height: 100%;
+    margin-top: 5px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #666;
 }
-
-
 
 img {
     width: 100%;
     height: auto;
-  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin: 0 0 20px 0;
+}
 
 h1 {
     font-size: 46px;
@@ -28,7 +34,6 @@ h2 {
 h3 {
     font-size: 25px;
     font-weight: 200;
-    padding-top: 5%;
 }
 
 h4 {
@@ -37,7 +42,7 @@ h4 {
 }
 
 h5 {
-    font-size: 18px; 
+    font-size: 18px;
     margin-bottom: 0px;
     margin-top: 10px;
     letter-spacing: 1px;
@@ -46,8 +51,6 @@ h5 {
 p {
     margin-top: 5px;
     line-height: 24px;
-    color: #666;
-
 
 }
 
@@ -56,6 +59,7 @@ ul {
     margin-top: 0px;
     padding-left: 0px;
 }
+
 li {
     list-style: none;
     margin-bottom: 10px;
@@ -64,9 +68,15 @@ li {
 .red-span {
     color: #671711;
     font-weight: 600;
-
 }
+
+.subtitle {
+    color: #671711;
+    font-weight: 400;
+}
+
 /* The hero image */
+
 .hero {
     background-image: url("http://cre8visions.com/wp-content/uploads/2016/03/header.jpg");
     height: 100vh;
@@ -87,54 +97,51 @@ li {
 
 .row {
     padding: 15% 0 5% 0;
+
 }
 
 .call-out {
     text-align: center;
-    padding-bottom: 10%;
+    margin-bottom: 15%;
 }
 
 /* -- WELCOME SECTION --*/
+
 /* -------------------*/
+
 #welcome {
     padding: 5%;
 }
 
-.line {
-    border-left: 3px solid #671711;
-    height: 75px;
-    position: relative;
-    padding-right: 10px;
-    float: left;
-}
-
-.line-short {
-    border-left: 3px solid #671711;
-    height: 40px;
-    position: relative;
-    padding-right: 10px;
-    float: left;
-}
-
 .title {
+    border-left: #671711 solid 3px; 
+    padding-left: 10px;
     margin: 0 25% 15px 0;
+
 }
+
+/* .title {
+    margin: 0 25% 15px 0;
+} */
 
 .title-bold {
     font-weight: 500;
     color: #671711;
 }
+
 .short-desc {
     margin: 0 25% 70px 0;
 }
 
 .icon {
     height: auto;
-    width: 48px; 
+    width: 48px;
 }
 
 /* -- ABOUT SECTION --*/
+
 /* -------------------*/
+
 #about {
     background-color: #f8f9fa;
     padding: 5%;
@@ -145,24 +152,28 @@ li {
     color: #671711;
 }
 
-
 /* -- TECHNOLOGIES --*/
+
 /* -------------------*/
+
 #technologies {
     padding: 5%;
 }
 
+.half {
+    margin-bottom: 5%;
+}
 
 /* -- OUR SERVICES --*/
+
 /* -------------------*/
+
 #services {
     background-color: #f8f9fa;
     padding: 5%;
 }
 
-.services-cards {
-
-}
+.services-cards {}
 
 .s-call-out {
     padding: 40px;
@@ -172,7 +183,9 @@ li {
 }
 
 /* -- HOW WE WORK --*/
+
 /* -------------------*/
+
 #howwework {
     padding: 5%;
 }
@@ -183,7 +196,9 @@ li {
 }
 
 /* -- FAQS --*/
+
 /* -------------------*/
+
 #faqs {
     padding: 5%;
 }
@@ -193,6 +208,10 @@ li {
     float: left;
     padding-right: 5px;
     font-weight: 600;
+}
+
+.questions {
+    margin-top: 40px;
 }
 
 .question {
@@ -206,36 +225,41 @@ li {
 }
 
 /* -- OUR WORK --*/
+
 /* -------------------*/
+
 #ourwork {
     padding: 5%;
 }
 
-
 /* -- OUR BLOG --*/
+
 /* -------------------*/
+
 #ourblog {
     padding: 5%;
 }
 
-
 /* -- CONTACT --*/
+
 /* -------------------*/
+
 #contact {
     padding: 5%;
 }
 
 input[type=text] {
-    border-radius: 3px; 
-    border: 1px solid #eeeeee; 
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
     /* padding: 12px 20px; */
     margin: 8px 0;
     box-sizing: border-box;
 }
+
 #mce-FNAME {
     width: 100%;
-    border-radius: 3px; 
-    border: 1px solid #eeeeee; 
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
     /* padding: 12px 20px; */
     margin: 8px 0;
     box-sizing: border-box;
@@ -243,8 +267,8 @@ input[type=text] {
 
 input[type=email] {
     width: 100%;
-    border-radius: 3px; 
-    border: 1px solid #eeeeee; 
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
     /* padding: 12px 20px; */
     margin: 8px 0;
     box-sizing: border-box;
@@ -252,8 +276,8 @@ input[type=email] {
 
 input[type=submit] {
     width: 50%;
-    border-radius: 3px; 
-    border: 1px solid #eeeeee; 
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
     padding: 12px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -261,10 +285,169 @@ input[type=submit] {
 
 #mce-MESSAGE {
     width: 100%;
-    height: 150px; 
+    height: 150px;
     resize: none;
-    border-radius: 3px; 
+    border-radius: 3px;
     box-sizing: border-box;
+}
 
+@media screen and (min-width: 1024px) {
+    h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    h5 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+    
+    .row {
+        padding: 0 0 0 0;
+
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Monsterrat', sans-serif;
+        font-weight: 300;
+        height: 100%;
+        margin-top: 5px;
+        line-height: 24px;
+        font-size: 15px;
+        color: #666;
+    }
+
+    #welcome {
+        padding: 80px 0;
+
+    }
+/* -- WELCOME SECTION --*/
+
+/* -------------------*/
+
+    .welcome-content {
+        max-width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .welcome-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .call-out {
+        margin-bottom: 0;
+        width: 22%;
+    }
+
+    .title {
+        border-left: #671711 solid 3px; 
+    }
+
+    .short-desc {
+        margin: 0 61% 70px 0;
+    }
+
+/* -- ABOUT SECTION --*/
+
+/* -------------------*/
+    #about {
+        width: 100%;
+        padding: 80px 0;
+    }
+
+    .about-content {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-half { 
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-right: 30px;
+    }
+
+    .about-check {
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* -- OUR SERVICES --*/
+
+/* -------------------*/
+    #services {
+       padding: 80px 0;
+    }
+
+    .services-content {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .services-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .s-call-out {
+        width: 24%;
+    }
+
+/* -- HOW WE WORK --*/
+
+/* -------------------*/
+    #howwework {
+        padding: 80px 0;
+    }
+
+    .howwework-content {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .howwework-cards{
+        display: flex; 
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .h-call-out {
+        width: 29%;
+    }
+
+
+    #faqs {
+        /* background-color: #f8f9fa; */
+        padding: 0;
+    }
+
+    .faqs-content {
+        display: flex;
+    }
+
+    .f-half {
+        width: 50%;
+    }
+
+    .f-half-left {
+        padding: 5%;
+
+    }
+
+    .f-half-right {
+        background-image: url("/images/faqs.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
 }
