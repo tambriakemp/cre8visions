@@ -3,7 +3,6 @@ body {
     font-family: 'Monsterrat', sans-serif;
     font-weight: 300;
     height: 100%;
-    margin-top: 5px;
     line-height: 24px;
     font-size: 18px;
     color: #666;
@@ -77,15 +76,69 @@ li {
     font-weight: 400;
 }
 
+/*---navigation-----*/
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 20px;
+    z-index: 1;
+}
+
+nav ul {
+    line-height: 20px;
+    list-style: none;
+    background: black;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s; 
+    max-height: 0; 
+}
+
+nav.black ul {
+    background: #000;
+}
+
+.showing {
+    max-height: 34em;
+}
+
+nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 20px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+}
+
 /* The hero image */
 
-.hero {
-    background-image: url("http://cre8visions.com/wp-content/uploads/2016/03/header.jpg");
+header {
+    background-image: url("/images/header.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 .hero-callout {
@@ -126,10 +179,6 @@ li {
     margin: 0 25% 15px 0;
 
 }
-
-/* .title {
-    margin: 0 25% 15px 0;
-} */
 
 .title-bold {
     font-weight: 500;
@@ -190,8 +239,6 @@ li {
     background-color: #f8f9fa;
     padding: 5%;
 }
-
-
 
 .s-call-out {
     padding: 40px;
@@ -326,13 +373,13 @@ input[type=submit] {
     box-sizing: border-box;
 }
 
+/*--------------------------------------DESKTOP-------------------------*/
 @media screen and (min-width: 1024px) {
      body {
         margin: 0;
         font-family: 'Monsterrat', sans-serif;
         font-weight: 300;
         height: 100%;
-        margin-top: 5px;
         line-height: 24px;
         font-size: 15px;
         color: #666;
@@ -358,28 +405,32 @@ input[type=submit] {
     }
 
     nav ul {
-        display: flex;
-        float: right;
+        background: rgba(0, 0, 0, 0);
+        max-height: 60px; 
+        padding: 20px 0 20px 0;
+    }
+
+    nav.black ul {
+        background: black;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .showing {
+        max-height: 0;
     }
 
     nav li {
         padding: 15px;
     }
 
-    #header {
-        background-color: black;
-        position: relative;
-        z-index: 1001;
-    }
+    nav ul li {
+        display: inline;
+        text-align: right;
+  }
 
-    #stickyContent {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        background-color: #E0461B;
-      }
   
 /* -- WELCOME SECTION --*/
 
