@@ -191,7 +191,7 @@ li {
     padding: 5%;
 }
 
-.services-cards {}
+
 
 .s-call-out {
     padding: 40px;
@@ -557,20 +557,6 @@ input[type=submit] {
     .c-half {
         width: 50%;
     }
-
-    /* div.answer {
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: 0.4s ease-in-out;
-        opacity: 0;
-        margin-bottom:10px;
-    }
-
-    div.answer.show {
-        opacity: 1;
-        max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
-    }  */
 
 }
 
