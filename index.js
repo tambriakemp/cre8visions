@@ -1,1 +1,0 @@
-document.getElementById('stickyContent').innerHTML = document.getElementById('header').innerHTML;

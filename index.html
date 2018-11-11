@@ -12,35 +12,38 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600" rel="stylesheet">
     <script type="text/javascript"
     src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
-
-    <div class="hero">
-        <div class="hero-callout">
-            <h4>We Are Cre8 Visions</h4>
-            <h1>Atlanta web <span class="red-span">design</span></h1>
-            <p>Let us help you put your vision on the web.</p>
-        </div>
-    </div>
-    <header id="header">
+    <header>
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>How We Work</li>
-                <li>FAQs</li>
-                <li>Our Work</li>
-                <li>Contact</li>
-            </ul>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>How We Work</li>
+                    <li>FAQs</li>
+                    <li>Our Work</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
         </nav>
-
+        <div class="hero-callout">
+                <h4>We Are Cre8 Visions</h4>
+                <h1>Atlanta web <span class="red-span">design</span></h1>
+                <p>Let us help you put your vision on the web.</p>
+            </div>
     </header> 
+
+
     
     <main>
-<div id="stickyContent"></div>
         <!--WELCOME-->
         <section id="welcome" class="row">
             <div class="welcome-content">
@@ -408,7 +411,8 @@
     
     <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'MESSAGE'; ftypes[5] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
     
-<script>document.addEventListener("DOMContentLoaded", function(event) { 
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
 
 
         var acc = document.getElementsByClassName("question");
@@ -427,7 +431,9 @@
             }
         }
         
-        });</script>
+        });
+        </script>
+
 </body>
 
 </html>
