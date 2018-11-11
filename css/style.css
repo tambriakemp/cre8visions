@@ -23,6 +23,7 @@ h1 {
     font-size: 46px;
     font-weight: 100;
     line-height: 42px;
+    color: #fff;
 }
 
 h2 {
@@ -38,7 +39,8 @@ h3 {
 
 h4 {
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 100;
+    color: #fff;
 }
 
 h5 {
@@ -105,6 +107,11 @@ li {
     margin-bottom: 15%;
 }
 
+.col-3 {
+  display: flex;
+  flex-direction: column;
+}
+
 /* -- WELCOME SECTION --*/
 
 /* -------------------*/
@@ -148,7 +155,7 @@ li {
 }
 
 .fas {
-    padding-right: 10px;
+    padding-right: 20px;
     color: #671711;
 }
 
@@ -163,6 +170,17 @@ li {
 .half {
     margin-bottom: 5%;
 }
+
+.tech-stack {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-3 img {
+    padding: 10px; 
+    width: 75px;
+    height: auto;        
+  }
 
 /* -- OUR SERVICES --*/
 
@@ -224,6 +242,20 @@ li {
     padding: 10px;
 }
 
+div.answer {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+}
+
+div.answer.show {
+    opacity: 1;
+    max-height: 500px; 
+}
+
 /* -- OUR WORK --*/
 
 /* -------------------*/
@@ -254,6 +286,7 @@ input[type=text] {
     /* padding: 12px 20px; */
     margin: 8px 0;
     box-sizing: border-box;
+    height: 30px;
 }
 
 #mce-FNAME {
@@ -272,6 +305,8 @@ input[type=email] {
     /* padding: 12px 20px; */
     margin: 8px 0;
     box-sizing: border-box;
+    height: 30px;
+
 }
 
 input[type=submit] {
@@ -292,23 +327,7 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 1024px) {
-    h3 {
-        font-size: 30px;
-        font-weight: 300;
-    }
-
-    h5 {
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 27px;
-    }
-    
-    .row {
-        padding: 0 0 0 0;
-
-    }
-
-    body {
+     body {
         margin: 0;
         font-family: 'Monsterrat', sans-serif;
         font-weight: 300;
@@ -319,19 +338,63 @@ input[type=submit] {
         color: #666;
     }
 
+    h3 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+  
+    h4 {
+      font-size: 24px;
+    }
+
+    h5 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+    
+    .row {
+        padding: 0 0 0 0;
+    }
+
+    nav ul {
+        display: flex;
+        float: right;
+    }
+
+    li {
+        padding: 15px;
+    }
+
+    #header {
+        background-color: black;
+        position: relative;
+        z-index: 1001;
+    }
+
+    #stickyContent {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #E0461B;
+      }
+  
+/* -- WELCOME SECTION --*/
+
+/* -------------------*/
     #welcome {
         padding: 80px 0;
 
     }
-/* -- WELCOME SECTION --*/
-
-/* -------------------*/
-
+  
     .welcome-content {
         max-width: 85%;
         margin-right: auto;
         margin-left: auto;
     }
+  
     .welcome-cards {
         display: flex;
         justify-content: space-between;
@@ -379,6 +442,42 @@ input[type=submit] {
         display: flex;
         justify-content: space-between;
     }
+  
+/*   Technologies we use */
+  
+    #technologies {
+        width: 100%;
+        padding: 80px 0;
+    }
+
+    .tech-content {
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .tech-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tech-half { 
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-right: 30px;
+    }
+
+    .tech-stack {
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .col-3 img {
+        padding: 10px; 
+        width: 100px;
+        /* height: auto;         */
+      }
+  
 
 /* -- OUR SERVICES --*/
 
@@ -425,9 +524,10 @@ input[type=submit] {
         width: 29%;
     }
 
+/* -- FAQS --*/
 
+/* -------------------*/
     #faqs {
-        /* background-color: #f8f9fa; */
         padding: 0;
     }
 
@@ -450,4 +550,89 @@ input[type=submit] {
         background-repeat: no-repeat;
     }
 
+    .contact-content {
+        display: flex;
+    }
+
+    .c-half {
+        width: 50%;
+    }
+
+    /* div.answer {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s ease-in-out;
+        opacity: 0;
+        margin-bottom:10px;
+    }
+
+    div.answer.show {
+        opacity: 1;
+        max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+    }  */
+
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+ 
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+ 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
