@@ -169,6 +169,7 @@ header {
     flex-direction: column;
 }
 
+
 /* -- WELCOME SECTION --*/
 
 /* -------------------*/
@@ -387,6 +388,11 @@ input[type=submit] {
         font-size: 15px;
         color: #666;
     }
+    
+    h1 {
+        font-size: 56px;
+    }
+
     h3 {
         font-size: 30px;
         font-weight: 300;
@@ -423,6 +429,13 @@ input[type=submit] {
         display: inline;
         text-align: right;
     }
+
+    .hero-sub {
+        font-weight: 100;
+        font-size: 20px;
+        
+    }
+    
     /* -- WELCOME SECTION --*/
     /* -------------------*/
     #welcome {
@@ -532,7 +545,7 @@ input[type=submit] {
         text-align: center;
     }
     .h-call-out {
-        width: 29%;
+        width: 22%;
     }
     /* -- FAQS --*/
     /* -------------------*/
