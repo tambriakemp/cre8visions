@@ -139,11 +139,11 @@ nav ul li a {
 /* The hero image */
 
 header {
-    background-image: url("/images/header.jpg");
+    background-image: url("/images/hero_image.jpg");
     height: 100vh;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .hero-callout {
@@ -155,9 +155,9 @@ header {
     color: white;
 }
 
-.row {
+/* .row {
     padding: 15% 0 5% 0;
-}
+} */
 
 .call-out {
     text-align: center;
